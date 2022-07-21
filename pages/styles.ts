@@ -112,6 +112,22 @@ export const ResultsSection = styled.div`
   padding: 60px;
 `;
 
+export const LocalizationSection = styled.div`
+  height: 100vh;
+  padding: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+`;
+
+export const LocalizationMapContainer = styled.div`
+  width: 500px;
+  height: 100%;
+
+  background: #8c8c8c;
+`;
+
 export const ContentAboutResults = styled.div`
   width: 60%;
   height: 100%;
@@ -217,4 +233,71 @@ export const AbsoluteImageDiploma = styled.div`
   position: absolute;
   top: 40px;
   right: 40px;
+`;
+
+export const FooterContainer = styled.div`
+  width: 100%;
+  background-color: #ffffff;
+  color: #0c0c0c;
+  padding: 3rem 5.6rem;
+
+  border-top: 1px solid #d9d9d9;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    path:nth-child(1) {
+      fill: #0a6f45;
+    }
+  }
+`;
+
+export const AboutBank = styled.p`
+  font-size: 14px;
+  color: #6e6e6e;
+`;
+
+export const LinksContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 32px;
+  grid-auto-flow: row;
+  grid-template-areas: '. . . . .';
+  padding-bottom: 2rem;
+`;
+
+export const LinksContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const ColumnTitle = styled.p`
+  font-size: 14px;
+  font-weight: 500;
+`;
+
+export const ColumnText = styled.p`
+  font-size: 14px;
+  color: #6e6e6e;
+`;
+
+export const ColumnLinks = styled.p`
+  font-size: 14px;
+  color: #6e6e6e;
+  transition: color 0.4s;
+  &:hover {
+    color: #0a6f45;
+  }
+`;
+
+export const DownSide = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-top: 1px solid #d9d9d9;
+  font-size: 12px;
+  color: #8c8c8c;
 `;

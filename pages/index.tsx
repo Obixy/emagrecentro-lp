@@ -147,6 +147,77 @@ const Home: NextPage = () => {
           </C.Button>
         </C.ContentAboutDiploma>
       </C.DiplomaStage>
+
+      <C.LocalizationSection>
+        <div style={{ paddingBottom: 120 }}>
+          <C.Title>Nossa unidade</C.Title>
+          <C.Subtitle>
+            Agora é com você, clique no botão <br /> abaixo e faça o nosso
+            método!
+          </C.Subtitle>
+
+          <C.Button>Quero emagrecer!</C.Button>
+        </div>
+
+        <C.LocalizationMapContainer></C.LocalizationMapContainer>
+      </C.LocalizationSection>
+
+      <C.FooterContainer>
+        <C.LinksContainer>
+          <C.LinksContent>
+            <div style={{ display: 'flex', gap: 24 }}>
+              <Image
+                src="/emagrecentro-logo.png"
+                alt="logo da Emagrecentro"
+                width="20"
+                height="46"
+              />
+            </div>
+
+            <C.AboutBank>Centro de Emagrecimento e Estetica.</C.AboutBank>
+          </C.LinksContent>
+
+          <C.LinksContent>
+            <C.ColumnLinks>Desenvolvido por</C.ColumnLinks>
+            <C.ColumnTitle>Obixy.</C.ColumnTitle>
+          </C.LinksContent>
+
+          <C.LinksContent></C.LinksContent>
+
+          <C.LinksContent>
+            <C.ColumnTitle>Contatos</C.ColumnTitle>
+
+            <C.ColumnLinks>Tarifas</C.ColumnLinks>
+            <C.ColumnLinks>Contrato portador</C.ColumnLinks>
+            <C.ColumnLinks>Plano de recompensa</C.ColumnLinks>
+            <C.ColumnLinks>Cotação do Dólar</C.ColumnLinks>
+            <C.ColumnLinks>Banese Card - Presente todo dia</C.ColumnLinks>
+          </C.LinksContent>
+
+          <C.LinksContent>
+            <C.ColumnTitle>Central de Atendimento</C.ColumnTitle>
+
+            <C.ColumnText>Capitais e regiões metropolitanas:</C.ColumnText>
+
+            <C.ColumnLinks>4002-2320</C.ColumnLinks>
+
+            <C.ColumnText>Outras localidades:</C.ColumnText>
+
+            <C.ColumnLinks>0800 284 2884</C.ColumnLinks>
+
+            <C.ColumnLinks>(79) 3218-2080</C.ColumnLinks>
+          </C.LinksContent>
+        </C.LinksContainer>
+
+        <C.DownSide>
+          <p>
+            Copyright &copy; {new Date().getFullYear()} Obixy Desenvolvimento de
+            softwares. Todos direitos reservaddos.
+          </p>
+
+          <p>Sergipe</p>
+        </C.DownSide>
+      </C.FooterContainer>
     </C.Container>
   );
 };
