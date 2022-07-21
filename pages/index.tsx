@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import Head from '../src/infra/components/Head';
 import { RiDoubleQuotesL } from 'react-icons/ri';
+
+import { FiBarChart } from 'react-icons/fi';
+import Head from '../src/infra/components/Head';
 import * as C from './styles';
 
 const Home: NextPage = () => {
@@ -60,6 +62,16 @@ const Home: NextPage = () => {
           <C.VideoContainer></C.VideoContainer>
         </C.MainContent>
       </C.MainContainer>
+
+      <div>
+        <FiBarChart size={100} color="#ACA474" />
+        <C.Title>
+          Veja os resultados de <br /> algumas clientes!
+        </C.Title>
+        <C.Subtitle>
+          Se eles conseguem, você <br /> também pode!
+        </C.Subtitle>
+      </div>
     </C.Container>
   );
 };
