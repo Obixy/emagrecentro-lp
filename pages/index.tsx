@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import { RiDoubleQuotesL } from 'react-icons/ri';
 
-import { FiBarChart } from 'react-icons/fi';
+import { FiArrowRight, FiBarChart } from 'react-icons/fi';
 import Head from '../src/infra/components/Head';
 import * as C from './styles';
 
@@ -63,13 +63,42 @@ const Home: NextPage = () => {
         </C.MainContent>
       </C.MainContainer>
 
-      <div
-        style={{
-          width: '100%',
-          height: 200,
-          background: 'red',
-        }}
-      ></div>
+      <C.BannerContainer>
+        <C.BannerContent>
+          <C.DiplomaTitle>
+            Veja os resultados <br /> que você pode esperar!
+          </C.DiplomaTitle>
+
+          <div style={{ display: 'flex', gap: 24 }}>
+            <div>
+              <h2>01</h2>
+              <C.Subtitle style={{ marginTop: 6 }}>Semana</C.Subtitle>
+            </div>
+
+            <div
+              style={{
+                width: '100%',
+                maxWidth: '400px',
+                padding: '6px 0',
+                display: 'flex',
+                alignItems: 'flex-start',
+                flexFlow: 'column',
+                borderTop: '1px solid #d9d9d9',
+              }}
+            >
+              <C.Subtitle style={{ color: '#232326' }}>
+                Resultados notaveis na balança e no espelho na 3 semana
+              </C.Subtitle>
+
+              <C.RoundedSpan
+                style={{ background: '#ACA474', color: '#FFFFFF' }}
+              >
+                Proxima <FiArrowRight size={20} color="#FFFFFF" />
+              </C.RoundedSpan>
+            </div>
+          </div>
+        </C.BannerContent>
+      </C.BannerContainer>
 
       <C.ResultsSection>
         <C.ContentAboutResults>
@@ -143,10 +172,37 @@ const Home: NextPage = () => {
           </C.Subtitle>
 
           <C.Button style={{ backgroundColor: '#ACA474', color: '#FFFFFF' }}>
-            Quero emagrecer!
+            Saber mais!
           </C.Button>
         </C.ContentAboutDiploma>
       </C.DiplomaStage>
+
+      <C.LocalizationSection>
+        <div
+          style={{
+            paddingBottom: 120,
+            display: 'flex',
+            alignItems: 'flex-start',
+            flexFlow: 'column',
+          }}
+        >
+          <C.RoundedSpan style={{ background: '#214b8a', color: '#f2f2f2' }}>
+            Fase 1
+          </C.RoundedSpan>
+
+          <C.Title>Fase Detox</C.Title>
+          <C.Subtitle>
+            Duração 1 semana: Fase de Desintoxicação <br /> onde o cliente
+            emagrece em média 3% de
+            <br /> seu peso corporal
+          </C.Subtitle>
+
+          <C.ButtonsContainer>
+            <C.RoundedSpan>Anterior</C.RoundedSpan>
+            <C.RoundedSpan>Proximo</C.RoundedSpan>
+          </C.ButtonsContainer>
+        </div>
+      </C.LocalizationSection>
 
       <C.LocalizationSection>
         <div style={{ paddingBottom: 120 }}>
@@ -191,7 +247,7 @@ const Home: NextPage = () => {
             <C.ColumnLinks>Contrato portador</C.ColumnLinks>
             <C.ColumnLinks>Plano de recompensa</C.ColumnLinks>
             <C.ColumnLinks>Cotação do Dólar</C.ColumnLinks>
-            <C.ColumnLinks>Banese Card - Presente todo dia</C.ColumnLinks>
+            <C.ColumnLinks>Site principal</C.ColumnLinks>
           </C.LinksContent>
 
           <C.LinksContent>

@@ -23,6 +23,21 @@ export const VideoContainer = styled.div`
   background-color: #d9d9d9;
 `;
 
+export const BannerContainer = styled.div`
+  width: 100%;
+  height: 200;
+  padding: 0 60px;
+`;
+
+export const BannerContent = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 export const MainContent = styled.main`
   width: 76%;
   height: 100%;
@@ -125,7 +140,7 @@ export const LocalizationMapContainer = styled.div`
   width: 500px;
   height: 100%;
 
-  background: #8c8c8c;
+  background: #d9d9d9;
 `;
 
 export const ContentAboutResults = styled.div`
@@ -175,7 +190,7 @@ export const VideoInstagramContainer = styled.div`
   width: 300px;
   height: 100%;
 
-  background-color: #8c8c8c;
+  background-color: #d9d9d9;
 `;
 
 export const DiplomaStage = styled.div`
@@ -247,7 +262,7 @@ export const FooterContainer = styled.div`
     width: 30px;
     height: 30px;
     path:nth-child(1) {
-      fill: #0a6f45;
+      fill: #214b8a;
     }
   }
 `;
@@ -288,7 +303,7 @@ export const ColumnLinks = styled.p`
   color: #6e6e6e;
   transition: color 0.4s;
   &:hover {
-    color: #0a6f45;
+    color: #214b8a;
   }
 `;
 
