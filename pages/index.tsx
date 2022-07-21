@@ -63,15 +63,90 @@ const Home: NextPage = () => {
         </C.MainContent>
       </C.MainContainer>
 
-      <div>
-        <FiBarChart size={100} color="#ACA474" />
-        <C.Title>
-          Veja os resultados de <br /> algumas clientes!
-        </C.Title>
-        <C.Subtitle>
-          Se eles conseguem, você <br /> também pode!
-        </C.Subtitle>
-      </div>
+      <div
+        style={{
+          width: '100%',
+          height: 200,
+          background: 'red',
+        }}
+      ></div>
+
+      <C.ResultsSection>
+        <C.ContentAboutResults>
+          <FiBarChart size={100} color="#ACA474" />
+          <C.Title>
+            Veja os resultados de <br /> algumas clientes!
+          </C.Title>
+          <C.Subtitle>
+            Se eles conseguem, você <br /> também pode!
+          </C.Subtitle>
+
+          <C.CarrouselFooter>
+            <C.DotsContainer>
+              <C.Dot />
+              <C.Dot />
+              <C.Dot active />
+            </C.DotsContainer>
+
+            <C.ButtonsContainer>
+              <C.RoundedSpan>Anterior</C.RoundedSpan>
+              <C.RoundedSpan>Proximo</C.RoundedSpan>
+            </C.ButtonsContainer>
+          </C.CarrouselFooter>
+        </C.ContentAboutResults>
+
+        <C.VideoInstagramContainer></C.VideoInstagramContainer>
+      </C.ResultsSection>
+
+      <C.DiplomaStage>
+        <C.DiplomaContainer>
+          <Image
+            src="/emagrecentro-logo.png"
+            alt="logo da Emagrecentro"
+            width="21"
+            height="48"
+          />
+
+          <div>
+            <C.DiplomaTitle>
+              Comprovada <br /> Cientificamente
+            </C.DiplomaTitle>
+
+            <C.DiplomaSubtitle>
+              É uma metodologia comprovada cientificamente que combina
+              procedimentos estéticos avançados com um programa de reeducação
+              alimentar.
+            </C.DiplomaSubtitle>
+          </div>
+
+          <C.AbsoluteImageDiploma>
+            <Image
+              src="/diploma-background.png"
+              alt="Qualidade aprovada"
+              width={100}
+              height={100}
+            />
+          </C.AbsoluteImageDiploma>
+        </C.DiplomaContainer>
+
+        <C.ContentAboutDiploma>
+          <C.Title style={{ color: '#F2F2F2' }}>
+            Certificado de <br />
+            qualidade
+          </C.Title>
+
+          <C.Subtitle style={{ color: '#F2F2F2' }}>
+            Se você dentro desse tempo, por algum motivo, achar que o Método 4
+            Fases não faz sentido e que, milagrosamente, só não funciona com
+            você, basta mandar você entrar em contato e terá todo o seu dinheiro
+            de volta.
+          </C.Subtitle>
+
+          <C.Button style={{ backgroundColor: '#ACA474', color: '#FFFFFF' }}>
+            Quero emagrecer!
+          </C.Button>
+        </C.ContentAboutDiploma>
+      </C.DiplomaStage>
     </C.Container>
   );
 };

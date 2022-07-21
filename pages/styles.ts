@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -102,4 +102,119 @@ export const Opinion = styled.div`
   display: flex;
   flex-flow: column;
   gap: 6px;
+`;
+
+export const ResultsSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  height: 100vh;
+  padding: 60px;
+`;
+
+export const ContentAboutResults = styled.div`
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+`;
+
+export const CarrouselFooter = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const DotsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+`;
+
+interface DotProps {
+  active?: boolean;
+}
+
+export const Dot = styled.div<DotProps>`
+  padding: 8px;
+  background: #c6d3e5;
+  border-radius: 20px;
+
+  ${(props) =>
+    props.active &&
+    css`
+      padding: 8px 12px;
+      background: #214b8a;
+    `}
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
+export const VideoInstagramContainer = styled.div`
+  width: 300px;
+  height: 100%;
+
+  background-color: #8c8c8c;
+`;
+
+export const DiplomaStage = styled.div`
+  width: 100%;
+  height: 100%;
+
+  background: #214b8a;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 60px;
+  padding-bottom: 0;
+`;
+
+export const DiplomaContainer = styled.div`
+  width: 600px;
+  height: 360px;
+
+  padding: 40px;
+  padding-bottom: 60px;
+
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  background-color: #ffffff;
+  position: relative;
+
+  background-image: url('/background-lines.png');
+`;
+
+export const ContentAboutDiploma = styled.div`
+  width: 500px;
+`;
+
+export const DiplomaTitle = styled.p`
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 33px;
+
+  color: #000000;
+`;
+
+export const DiplomaSubtitle = styled.p`
+  font-size: 16px;
+  line-height: 16px;
+
+  margin-top: 20px;
+
+  color: #8c8c8c;
+`;
+
+export const AbsoluteImageDiploma = styled.div`
+  position: absolute;
+  top: 40px;
+  right: 40px;
 `;
